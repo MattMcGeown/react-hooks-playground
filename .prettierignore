@@ -1,0 +1,17 @@
+.DS_Store
+.editorconfig
+.generated
+.git
+.github
+.gitignore
+.prettierignore
+.eslintrc.js
+.eslintrc.json
+package-lock.json
+README.md
+build
+dist
+node_modules
+package.json
+tsconfig.json
+tsconfig.node.json
