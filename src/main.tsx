@@ -2,22 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.tsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import './index.css';
-import UseState from './pages/hooks/useState/index.tsx';
+import { ChakraProvider } from '@chakra-ui/react';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
   },
-  {
-    path: '/hooks/usestate',
-    element: <UseState />,
-  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ChakraProvider>
+      <RouterProvider router={router} />
+    </ChakraProvider>
   </React.StrictMode>
 );
